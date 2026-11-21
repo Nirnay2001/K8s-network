@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod1
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx
+      image: nginx:stable
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod2
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx
+      image: nginx:stable
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod3
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx
+      image: nginx:stable
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
